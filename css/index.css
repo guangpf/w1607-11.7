@@ -1,0 +1,205 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    font-family:"苹方";
+    box-sizing: border-box;
+}
+a{
+    text-decoration:none;
+    color:#333;
+}
+/*头部*/
+.top_header{
+    width:100%;
+    height:40px;
+    background:#444;
+    z-index:999;
+}
+.adv{
+    color:#a8a8aa;
+    font-size:12px;
+    font-family: "HanHei SC", PingHei, "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: block;
+    line-height:40px;
+    overflow:hidden;
+    text-align:right;
+    max-width:976px;
+    margin:0 auto;
+}
+.nav{
+    width:100%;
+    height:48px;
+    margin:0 auto;
+    /*max-width: 1024px;*/
+    max-height:44px;
+    background:rgba(0,0,0,0.8);
+    font-size:18px;
+}
+.nav_con{
+    margin:0 auto;
+    max-width:70%;
+    padding:0 22px;
+    position:relative;
+    z-index:2;
+}
+.nav_list{
+    width:auto;
+    height:44px;
+    text-align:justify;
+    margin:0 -10px;
+    cursor:default;
+}
+.nav_item{
+    height:44px;
+    position:relative;
+    display:inline-block;
+    vertical-align: top;
+    z-index: 1;
+    margin-right:6%;
+}
+.nav_link{
+    height:44px;
+    font-size:16px;
+    line-height:2.75;
+    font-weight:400;
+    letter-spacing: normal;
+    opacity:1;
+    color:#fff;
+    position:relative;
+    z-index: 1;
+    display:inline-block;
+     padding:0 10px;
+    background:no-repeat;
+    white-space: nowrap;
+    transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -webkit-tap-highlight-color: transparent;
+    outline-offset: -7px;
+}
+.nav_link_apple{
+    width:20px;
+    background-size:20px 40px;
+    background: url(../img/apple.svg)center;
+}
+.nav_link_text{
+    position:absolute;
+    top:0;
+    left:0;
+    clip:rect(1px,1px,1px,1px);
+    overflow:hidden;
+    height:1px;
+    width:1px;
+    padding:0;
+    left:auto;
+}
+.nav_link_mac{
+    background-repeat: no-repeat;
+    background-size: 31px 44px;
+    /*background-image: url(../img/large.svg);*/
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 1.9375em;
+    max-width: 52.7px;
+}
+.nav_link_iPad{
+    background-repeat: no-repeat;
+    background-size: 30px 44px;
+    background-image: url(../img/ipad.svg);
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 1.875em;
+    max-width: 51px;
+}
+.nav_link_iPhone{
+    background-repeat: no-repeat;
+    background-size: 48px 44px;
+    background-image: url(../img/iphone.svg);
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 3em;
+    max-width: 81.6px;
+}
+.nav_link_Watch{
+    background-repeat: no-repeat;
+    background-size: 44px 44px;
+    background-image: url(../img/watch.svg);
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 2.75em;
+    max-width: 74.8px;
+}
+.nav_link_Music{
+    background-repeat: no-repeat;
+    background-size: 40px 44px;
+    background-image: url(../img/music.svg);
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 2.5em;
+    max-width: 68px;
+}
+.nav_link_support{
+    background-repeat: no-repeat;
+    background-size: 57px 44px;
+    background-image: url(../img/support.svg);
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    width: 3.5625em;
+    max-width: 96.9px;
+}
+.nav_link_search{
+    background-repeat: no-repeat;
+    background-size: 20px 44px;
+    background-image: url(../img/search.svg);
+    background-position: center center;
+    width: 20px;
+}
+.nav_link_bag{
+    background-repeat: no-repeat;
+    background-size: 18px 44px;
+    background-image: url(../img/bag.svg);
+    background-position: center center;
+    width: 18px;
+}
+/*banner*/
+.banner{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height:540px;
+}
+.first{
+    display:block;
+    width:100%;
+    height:100%;
+    background:url(../img/event_large.jpg)no-repeat 50% 40%;
+}
+
+.list{
+    border-bottom:2px solid #fff;
+}
+.promo {
+    display: block;
+    background-position: center center;
+    height: 200px;
+}
+.promo-tile {
+    list-style-type: none;
+    box-sizing: border-box;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+.column {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    float: left;
+    min-height: 2px;
+}

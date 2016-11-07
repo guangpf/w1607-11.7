@@ -5,7 +5,7 @@
 /*小屏的时候*/
 .container{
   &{
-     width:@num1*1-@minWidth;
+     width:@minWidth;
      margin: auto;
   }
   &>.row{
@@ -27,7 +27,26 @@
 .col-s-hide{
   display: none;
 }
-
+.promo-nike-watch {
+  background-size: 736px 200px;
+  background-repeat: no-repeat;
+  background-image: url(../img/nike_watch_small.jpg);
+}
+.promo-airpods {
+  background-size: 736px 200px;
+  background-repeat: no-repeat;
+  background-image: url(../img/airpods_small.jpg);
+}
+.promo-iphone-upgrade {
+  background-size: 736px 200px;
+  background-repeat: no-repeat;
+  background-image: url(../img/iphone_upgrade_small.jpg);
+}
+.promo-accessibility {
+  background-size: 736px 200px;
+  background-repeat: no-repeat;
+  background-image: url(../img/accessibility_small.jpg);
+}
 /*中屏*/
 
 @media screen and (min-width: @num1){
@@ -35,6 +54,26 @@
       width:@num1;
       margin: auto;
     }
+  .promo-nike-watch {
+    background-size: 640px 200px;
+    background-repeat: no-repeat;
+    background-image: url(../img/nike_watch_medium.jpg);
+  }
+  .promo-airpods {
+    background-size: 640px 200px;
+    background-repeat: no-repeat;
+    background-image: url(../img/airpods_medium.jpg);
+  }
+  .promo-iphone-upgrade {
+    background-size: 640px 200px;
+    background-repeat: no-repeat;
+    background-image: url(../img/iphone_upgrade_medium.jpg);
+  }
+  .promo-accessibility {
+    background-size: 640px 200px;
+    background-repeat: no-repeat;
+    background-image: url(../img/accessibility_medium.jpg);
+  }
  .loop(m);
   .col-s-hide{
     display: block;
@@ -52,6 +91,26 @@
   .container{
     width:@num2;
     margin: auto;
+  }
+  .promo-nike-watch {
+    background-size: 360px 200px;
+    background-repeat: no-repeat;
+    background-image: url(../img/nike_watch_large.jpg);
+  }
+  .promo-airpods {
+    background-size: 360px 200px;
+    background-repeat: no-repeat;
+    background-image: url(../img/airpods_large.jpg);
+  }
+  .promo-iphone-upgrade {
+    background-size: 360px 200px;
+    background-repeat: no-repeat;
+    background-image: url(../img/iphone_upgrade_large.jpg);
+  }
+  .promo-accessibility {
+    background-size: 360px 200px;
+    background-repeat: no-repeat;
+    background-image: url(../img/accessibility_large.jpg);
   }
   .loop(l);
   .col-s-hide{
@@ -76,7 +135,13 @@
   }
   .loop(@type,@i+1);
 }
-
+a[class*=col]{
+  height:100%
+}
+//li[class*=col]{
+//  height:200px;
+//  border:1px solid #000;
+//}
 
 /*清除浮动*/
 .clear(){
