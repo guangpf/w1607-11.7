@@ -3,7 +3,7 @@
 }
 /*小屏的时候*/
 .container {
-  width: 635px;
+  width: 767px;
   margin: auto;
 }
 .container > .row {
@@ -153,9 +153,9 @@
   background-image: url(../img/accessibility_small.jpg);
 }
 /*中屏*/
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
   .container {
-    width: 900px;
+    width: 1000px;
     margin: auto;
   }
   .promo-nike-watch {
